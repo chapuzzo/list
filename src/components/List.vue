@@ -31,7 +31,9 @@
             v-model.lazy="category[i].type"
             class="text"
           >
-          <label>
+          <label
+              class="multiprice"
+          >
             <input
               v-model="meta.multiprice"
               :disabled="loading"
@@ -208,6 +210,10 @@ export default {
     font-weight: bold;
     flex: 1 1 auto;
     max-width: 50vw;
+  }
+
+  .multiprice {
+    margin-left: auto;
   }
 }
 
