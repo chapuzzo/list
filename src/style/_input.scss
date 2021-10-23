@@ -1,0 +1,19 @@
+input[type='button'], select {
+  &[disabled] {
+    color: gray;
+    background-color: darkgray;
+  }
+
+  border: 1px black solid;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #333333;
+  color: white;
+  filter: drop-shadow(2px 2px grey);
+
+  &:active {
+    transform: translate(1px, 1px);
+    filter: drop-shadow(1px 1px grey);
+  }
+}
